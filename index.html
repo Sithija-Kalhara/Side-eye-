@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>SMS Opt-in Confirmation</title>
-</head>
-<body>
-  <h1>SideEye - Opt-In Confirmation</h1>
-  <p>By signing up on SideEye, users agree to receive SMS messages related to their activity, updates, and support.</p>
-  <p>Phone number: +1-888-611-8085</p>
-  <p>Support: sithijakalhara2@gmail.com</p>
-  <input type="checkbox" id="consent" required />
-<label for="consent">I agree to receive SMS verification codes</label>
+<html>
+  <head>
+    <title>SideEye - Opt-In Confirmation</title>
+  </head>
+  <body>
+    <h2>SideEye - Opt-In Confirmation</h2>
+    <p>By signing up on SideEye, users agree to receive SMS messages related to their activity, updates, and support.</p>
+    <p>Phone number: +1-888-611-8085</p>
+    <p>Support: sithijakalhara2@gmail.com</p>
 
-</body>
+    <form>
+      <label for="phone">Phone Number:</label><br />
+      <input type="text" id="phone" name="phone" required /><br /><br />
+
+      <input type="checkbox" id="smsConsent" name="smsConsent" required />
+      <label for="smsConsent">I agree to receive SMS verification codes</label><br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
 </html>
